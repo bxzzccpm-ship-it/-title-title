@@ -1,0 +1,908 @@
+<!doctype html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>موقعي — كاظم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --accent:#ff7a59;
+      --muted:#9aa4b2;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Cairo',system-ui,Segoe UI,Roboto,Arial;color:#e6eef6;background:linear-gradient(180deg,var(--bg),#071025);}
+    .container{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ffb085);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .hero{background:linear-gradient(180deg,rgba(255,255,255,0.03),transparent);border-radius:18px;padding:28px;margin-top:20px;display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{color:var(--muted);line-height:1.6}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .feature{padding:14px;border-radius:12px}
+    .cta{display:flex;gap:10px;margin-top:18px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    footer{color:var(--muted);text-align:center;margin-top:28px}
+    /* responsive */
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:560px){
+      .features{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+    }
+    /* simple form styles */
+    form label{display:block;margin-bottom:6px;color:var(--muted);font-size:14px}
+    input,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#eaf2ff}
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">ك</div>
+        <div>
+          <div style="font-weight:700">موقع كاظم</div>
+          <div style="font-size:13px;color:var(--muted)">صفحة شخصية بسيطة وسهلة التعديل</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">عنّي</a>
+        <a href="#work">الأعمال</a>
+        <a href="#contact">اتصل</a>
+      </nav>
+    </header><section class="hero">
+  <div>
+. &nbsp; • &nbsp; © <span id="year"></span>
+</footer>
+
+  </div>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleContact(e){
+      e.preventDefault();
+      const n=document.getElementById('name').value||'صديق';
+      alert('تم استلام رسالتك، '+n+' — رح أرد عليك قريباً.');
+      document.getElementById('name').value='';
+      document.getElementById('message').value='';
+    }
+  </script></body>
+</html>
+<section>
+  <h2>حضارات العالم القديمة</h2>
+  <p>
+    عبر التاريخ، ازدهرت العديد من الحضارات العظيمة مثل الحضارة
+    السومرية في العراق، والمصرية القديمة على ضفاف النيل،
+    والحضارة اليونانية والرومانية في أوروبا.
+  </p>
+</section>
+
+<section>
+  <h3>الحضارة السومرية</h3>
+  <p>
+    تُعد السومرية من أقدم الحضارات، ظهرت في جنوب العراق، وابتكرت
+    الكتابة المسمارية، وأقامت المدن الأولى في التاريخ.
+  </p>
+</section>
+
+<section>
+  <h3>الحضارة المصرية</h3>
+  <p>
+    اشتهرت بالأهرامات والمعابد والملوك الفراعنة، وكانت من أكثر
+    الحضارات تقدمًا في الهندسة والطب والفلك.
+  </p>
+</section>
+
+<section>
+  <h3>الحضارة البابلية</h3>
+  <p>
+    عرفت بحدائقها المعلقة وقانون حمورابي، وكانت مركزًا علميًا وثقافيًا
+    عظيمًا في العصور القديمة.
+  </p>
+</section>
+<!doctype html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>موقعي — كاظم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --accent:#ff7a59; --muted:#9aa4b2; }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Cairo',system-ui,Segoe UI,Roboto,Arial;color:#e6eef6;background:linear-gradient(180deg,var(--bg),#071025);}
+    .container{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ffb085);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    footer{color:var(--muted);text-align:center;margin-top:28px}
+    @media(max-width:560px){header{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">ك</div>
+        <div>
+          <div style="font-weight:700">موقع كاظم</div>
+          <div style="font-size:13px;color:var(--muted)"></div>
+        </div>
+      </div>
+      <nav>
+        <!-- القوائم فارغة حالياً -->
+      </nav>
+    </header><main style="margin-top:20px">
+  <section class="card">
+    <!-- المحتوى محذوف حسب الطلب -->
+    <h2 style="margin-top:0">المحتوى محذوف</h2>
+    <p style="color:var(--muted)">تمت إزالة النصوص والعناصر المطلوبة. يمكنك الآن إضافة محتوى جديد.</p>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span>
+</footer>
+
+  </div>  <script>document.getElementById('year').textContent = new Date().getFullYear();</script></body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موسوعة الحضارة السومرية الشاملة - الكنوز المخفية</title>
+    <style>
+        /* التنسيق العام */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 2.1; 
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 98%; /* تم زيادة عرض الحاوية لـ 98% */
+            margin: auto;
+            overflow: hidden;
+            padding: 60px 0;
+        }
+
+        section {
+            padding: 40px;
+            margin-bottom: 70px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        }
+
+        h2, h3 {
+            color: #007bff;
+            border-bottom: 6px solid #eee;
+            padding-bottom: 25px;
+        }
+        
+        /* التخصيص الخاص للحضارة السومرية (الستايل الفخم) */
+        #sumerian-civilization {
+            background: #000000;
+            color: #fff8e1; 
+            box-shadow: 0 25px 50px rgba(0,0,0,1);
+            border: 5px solid #ffd700; 
+            padding: 70px 5%; /* تم توسيع الهوامش الداخلية لتقليل عرض الخلفية وضغط النص */
+            
+            /* خلفية محاكاة للنقوش المسمارية */
+            background-image: 
+                url('https://via.placeholder.com/1800x1200/0a0a0a/4e3c1f?text=Detailed+Sumerian+Cuneiform+Script+Background') !important;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 1; 
+        }
+
+        #sumerian-civilization h3 {
+            color: #ffbf00; 
+            border-bottom-color: #ffbf00;
+            font-size: 2.8em;
+            text-shadow: 4px 4px #000;
+        }
+        
+        .sumerian-sub-section {
+            padding: 35px 0;
+            margin-bottom: 45px;
+            border-top: 4px dashed #777;
+        }
+
+        .sumerian-sub-section h4 {
+            color: #ff8c00; 
+            margin-top: 0;
+            margin-bottom: 18px;
+            font-size: 2.0em;
+            padding-bottom: 8px;
+        }
+        
+        .sumerian-sub-section p {
+            padding-right: 30px;
+            border-right: 6px solid #ffcc00; 
+            margin-bottom: 25px;
+            font-size: 1.2em;
+        }
+        
+        ul {
+            list-style: none;
+            padding-right: 35px;
+        }
+        ul li:before {
+            content: "✶"; 
+            color: #ffcc00;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1.5em;
+            margin-right: 10px;
+        }
+        
+        .image-placeholder {
+            width: 95%;
+            height: 350px;
+            background-color: #383838;
+            margin: 30px auto;
+            border: 3px solid #ffaa00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f0f0f0;
+            font-size: 1.6em;
+            background-image: url('https://via.placeholder.com/1000x350/4e3c1f/fff8e1?text=Sumerian+Standard+of+Ur+Placeholder');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .king-list table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #fff8e1;
+            background-color: #333;
+        }
+        .king-list th, .king-list td {
+            border: 2px solid #ffbf00;
+            padding: 12px;
+            text-align: right;
+        }
+        .king-list th {
+            background-color: #ff8c00;
+            color: #101010;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>سجل الحضارة السومرية: التفاصيل التي لم تُروَ</h1>
+    </header>
+
+    <div class="container">
+        
+        <section class="other-civilization">
+            <h2>الخلفية والأهمية التاريخية</h2>
+            <p>تعتبر سومر (أرض السادة المتحضرين) هي أول منطقة في التاريخ تصل إلى ما يُعرف بـ "الثورة الحضرية"، حيث انتقلت من مجتمعات القرى المعتمدة على الكفاف إلى مجتمعات المدن الكبرى التي تحوي آلاف السكان وتدار وفق أنظمة إدارية وقانونية معقدة. إن أي دراسة للتاريخ البشري تبدأ من هذه النصوب الطينية جنوب العراق.</p>
+        </section>
+
+        <section id="sumerian-civilization">
+            <h3>أسرار الحضارة السومرية: من الطين إلى النجوم</h3>
+            <p>كانت سومر مزيجاً فريداً من التكنولوجيا البدائية والمعرفة المتقدمة. لقد قاموا بدمج العبادة الدينية مع الإدارة الاقتصادية في نظام متكامل هو نظام "المعبد-الدولة"، مما أتاح لهم جمع الموارد اللازمة للري والتحصين والتوسع المعرفي.</p>
+
+            <div class="image-placeholder" style="background-image: url('https://via.placeholder.com/1000x350/4e3c1f/fff8e1?text=Sumerian+Gudea+Statue+Placeholder');">
+                صورة محاكاة (تمثال كوديا)
+            </div>
+
+            <div class="sumerian-sub-section">
+                <h4>1. الحياة اليومية، التقسيمات الاجتماعية، والمهن</h4>
+                <p>الحياة اليومية كانت منظمة بدقة حول المعبد والعمل الزراعي. **الطبقات:** لم تكن الطبقة الحاكمة (الملك والكهنة) هي الوحيدة المهمة، بل كانت طبقة **الـ *Lú*** (الرجل الحر/النبيل) تضم النخبة من الكتبة وكبار التجار. أدنى طبقة كانت الـ ***Mushkenu*** (المواطن العادي)، يليهم **العبيد** (المملوكين إما بالدين أو أسرى الحرب، والذين كان يمكنهم شراء حريتهم). **الأزياء والطعام:** كان الرجال يرتدون تنانير صوفية تعرف بـ **"Kaftan"**، وكان غذاؤهم الأساسي هو **الشعير** (يصنع منه الخبز والجعة - المشروب الوطني)، بالإضافة إلى التمور والأسماك. **المنزل:** كانت المنازل بسيطة، مبنية من الطوب اللبن، تحوي فناءً مركزياً مفتوحاً للتهوية والإضاءة.</p>
+            </div>
+            
+            <div class="sumerian-sub-section">
+                <h4>2. العسكرية الفائقة: النظام والتكتيكات والنزاعات المسلحة</h4>
+                <p>أضاف السومريون أبعاداً جديدة للحرب. **مسلة النسور:** تُظهر التفاصيل المنقوشة على هذه المسلة أقدم دليل على زي عسكري موحد واستخدام تكتيكات المشاة المتراصة والمحترفة. **الحصار:** كان حصار المدن يستمر لأشهر، وكان السومريون يستخدمون المنجنيقات البدائية وتركيبات لتسلق الجدران المصنوعة من الطوب اللبن. **معارك التوحيد:** الصراع بين سلالات كيش، أوروك، وأور كان دافعاً أساسياً للتوحيد، وأبرزها هو انتصار الملك **لوغال زاغيزي** على جميع المدن السومرية لمدة 25 عاماً قبل أن يسقطه سرجون الأكادي.</p>
+            </div>
+
+            <div class="sumerian-sub-section king-list">
+                <h4>3. السلالات الحاكمة: ملوك القوة والسلطة</h4>
+                <p>تنقسم قائمة الملوك إلى فترات سلالات متعاقبة، مما يعكس انتقال مركز القوة من مدينة لأخرى (مثل انتقالها من كيش إلى أوروك ثم أور).</p>
+                <table>
+                    <tr>
+                        <th>المدينة / الفترة</th>
+                        <th>الملك البارز</th>
+                        <th>التفاصيل والإرث</th>
+                    </tr>
+                    <tr>
+                        <td>سلالة أوروك الأولى</td>
+                        <td>**جلجامش (Gilgamesh)**</td>
+                        <td>ملك أسطوري (حوالي 2700 ق.م)، كان يُعتبر نصف إله، وأعماله ألهمت أقدم عمل أدبي ملحمي.</td>
+                    </tr>
+                    <tr>
+                        <td>سلالة أور الأولى</td>
+                        <td>**ميسكالامدوغ**</td>
+                        <td>ملكه ومقبرتهما الملكية (Royal Cemetery) في أور كشفت عن كنوز ضخمة من الذهب والأحجار الكريمة، مما يدل على ثراء فائق.</td>
+                    </tr>
+                    <tr>
+                        <td>سلالة لجش الأولى</td>
+                        <td>**أوروكاجينا (Urukagina)**</td>
+                        <td>أصدر أول إصلاح اجتماعي وقانوني مسجل في التاريخ (حوالي 2350 ق.م)، لحماية الفقراء من فساد الكهنة.</td>
+                    </tr>
+                    <tr>
+                        <td>سلالة أور الثالثة (النهضة)</td>
+                        <td>**شولجي (Shulgi)**</td>
+                        <td>ابن أورنمو، قام بتنظيم بيروقراطي وإداري مركزي مذهل للإمبراطورية، واشتهر ببناء شبكات طرق.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="sumerian-sub-section">
+                <h4>4. الإعمار، الهندسة، والتكنولوجيا المبتكرة</h4>
+                <p>الاختراعات السومرية لم تقتصر على الكتابة. **تقنية الطوب اللبن:** كان الطوب يخلط بالقش والقصب ويُصنع في قوالب. كما أنهم أول من استخدم **القوس (Arch)** و **القبة (Dome)** في بناء الهياكل المعمارية الكبيرة (المعابد والقصور). **عجلة الفخار:** يُنسب إليهم اختراعها، مما أحدث ثورة في صناعة الفخار وإنتاج الأوعية بكميات كبيرة. **أقدم نظام عد:** نظام العد السومري كان يعتمد على الأساس **الستيني (Sexagesimal System)**، وهو ما ورثناه في تقسيم الوقت (60 ثانية، 60 دقيقة) والدائرة (360 درجة).</p>
+            </div>
+
+            <div class="image-placeholder" style="background-image: url('https://via.placeholder.com/1000x350/222222/fff8e1?text=Sir+Leonard+Woolley+Ur+Excavation+Placeholder');">
+                صورة محاكاة (التنقيبات الأثرية)
+            </div>
+
+            <div class="sumerian-sub-section">
+                <h4>5. الاكتشافات الأثرية الكبرى ومواقع التنقيب</h4>
+                <p>لولا جهود علماء الآثار، لظلت هذه الحضارة مدفونة. **أور:** الموقع الأكثر أهمية، تم التنقيب فيه على نطاق واسع من قبل **السير ليونارد وولي** في عشرينيات وثلاثينيات القرن الماضي، حيث اكتشف **المقبرة الملكية** التي احتوت على كنوز من الذهب واللازورد، و**زقورة أور**. **لجش:** موطن لأكثر من 100,000 لوح طيني، وكشفت عن أول إصلاحات قانونية. **أوروك:** مسقط رأس جلجامش، وكشفت عن أقدم أشكال الكتابة المسمارية.</p>
+            </div>
+
+            <div class="sumerian-sub-section">
+                <h4>6. الدين، الميثولوجيا، وأثرها على المنطقة</h4>
+                <p>**وظيفة الزقورة:** لم تكن فقط مكاناً للعبادة، بل كانت مراكز لـ **رصد النجوم** وجمع العشور (الضرائب الزراعية)، مما يربط الدين بالاقتصاد. **الطوفان:** كانت قصة الطوفان السومرية (التي تظهر في ملحمة جلجامش)، حيث ينجو البطل **زايوسودرا**، هي المصدر المباشر لقصة الطوفان في الحضارات البابلية والأكادية واليهودية (نوح). **الفلك:** كان الكهنة علماء فلك، فهم أول من صنف النجوم ومجموعات الكواكب وبدأوا في تتبع حركتها بشكل منهجي.</p>
+            </div>
+            
+        </section>
+
+        <section class="other-civilization">
+            <h2>الخاتمة: إرث سومر الدائم</h2>
+            <p>يمكن القول بأن كل حضارة تلت السومريين في بلاد ما بين النهرين هي وريثة مباشرة لهم. من نظام العد إلى القانون المكتوب وتنظيم المدن، قدمت سومر المخطط الأساسي الذي لا يزال يؤثر على العالم الحديث، خاصة في تقسيم الدائرة والساعة.</p>
+        </section>
+        
+    </div>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموسوعة المرجعية الآشورية: تفصيل الملوك والحروب</title>
+    <style>
+        /* التنسيق العام (الخارجي) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6; /* تقليل التباعد قليلاً لزيادة كثافة النص */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 98%; 
+            margin: auto;
+            overflow: hidden;
+            padding: 60px 0;
+        }
+
+        section {
+            padding: 40px;
+            margin-bottom: 70px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+
+        h2, h3 {
+            color: #007bff;
+            border-bottom: 6px solid #eee;
+            padding-bottom: 30px;
+        }
+        
+        /* === تصميم الحضارة الآشورية (قرمزي وذهبي) === */
+        #assyrian-empire {
+            background: #1a0000;
+            color: #fff8e1; 
+            box-shadow: 0 25px 50px rgba(0,0,0,1);
+            border: 6px solid #cc0000; 
+            padding: 60px 3%;
+            
+            /* خلفية محاكاة للنحت الآشوري */
+            background-image: 
+                url('https://via.placeholder.com/1800x1200/290000/ffaa00?text=Assyrian+Warriors+and+Lion+Hunt+Relief+Background') !important;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 1;
+        }
+        
+        #assyrian-empire h3 {
+            color: #ffcc00; 
+            border-bottom-color: #cc0000;
+            font-size: 3.0em; 
+            text-shadow: 5px 5px #000;
+        }
+
+        /* تنسيق الأقسام الفرعية المفصولة */
+        .sub-section {
+            padding: 30px 0;
+            margin-bottom: 40px;
+            border-top: 4px dashed #777;
+        }
+
+        .sub-section h4 {
+            color: #ff8c00; 
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2.0em; 
+            padding-bottom: 10px;
+        }
+        
+        .sub-section p {
+            padding-right: 30px;
+            border-right: 6px solid #ffcc00; 
+            margin-bottom: 30px;
+            font-size: 1.1em; /* أصغر حجم خط ممكن للنص العادي */
+            line-height: 1.7;
+        }
+        
+        ul {
+            list-style: none;
+            padding-right: 35px;
+            margin-bottom: 25px;
+        }
+        ul li {
+            font-size: 1.0em; /* أصغر حجم خط ممكن للقوائم */
+            margin-bottom: 8px; /* تقليل التباعد */
+        }
+        ul li:before {
+            content: "✶"; 
+            color: #ffcc00;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1.5em;
+            margin-right: 12px;
+        }
+        
+        .king-list table, .war-list table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #fff8e1;
+            background-color: #333;
+            font-size: 1.0em;
+        }
+        .king-list th, .king-list td, .war-list th, .war-list td {
+            border: 3px solid #ffbf00;
+            padding: 12px 18px; /* تقليل البادينغ */
+            text-align: right;
+        }
+        .king-list th, .war-list th {
+            background-color: #cc0000;
+            color: #fff8e1;
+        }
+        .war-list tr:nth-child(even) {
+            background-color: #444; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>الموسوعة المرجعية الآشورية: تفصيل الملوك والحروب</h1>
+    </header>
+
+    <div class="container">
+        
+        <section id="sumerian-civilization">
+            <h3>أسرار الحضارة السومرية: من الطين إلى النجوم</h3>
+            <p>تم الحفاظ على تفاصيل الحضارة السومرية كما وردت في الطلبات السابقة.</p>
+        </section>
+
+
+        <section id="assyrian-empire">
+            <h3>الإمبراطورية الآشورية: مصدر القوة والتنظيم في التاريخ القديم</h3>
+            <p>هذا القسم يقدم تفصيلاً تاريخياً وإدارياً وعسكرياً شاملاً ومكثفاً للإمبراطورية الآشورية، مع التركيز على الأسماء والأرقام والوقائع التاريخية المحددة.</p>
+
+            <div class="sub-section">
+                <h4>1. القوانين (قانون آشور الوسيط - MLA والتشريعات الإضافية)</h4>
+                <p>قانون MLA يمثل حوالي **100 مادة**، ويركز بشدة على **العقوبات الجسدية** و**العدالة العقابية** (بدلاً من التعويض). من أهم مواده: **المادة 40** (عقوبة التشويه للمرأة التي تسقط جنينها دون إذن زوجها). كانت هناك قوانين إضافية تسمى **Adê** (معاهدات الولاء) يفرضها الملك لضمان ولاء النبلاء، والتي تضمنت لعنات إلهية مفصلة للغاية على الخونة. هذه القوانين كانت جزءاً من سياسة الردع الآشورية الشاملة.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>2. الديانة والمعتقدات الآشورية (بانثيون الآلهة والعبادة)</h4>
+                <p><strong>البانثيون الآشوري:</strong> آشور كان الإله القومي الأهم، لكن البانثيون شمل آلهة رئيسية أخرى: **عشتار** (Ishtar) إلهة الحب والحرب (كانت تُعبد في معابد نينوى وأربيل)، **أدد** (Adad) إله الطقس والعواصف، **شمش** (Shamash) إله الشمس والعدل. كان الملك يشغل منصب **كاهن آشور الأعظم (ērib bīti)**. **الطقوس:** شملت الطقوس السنوية إعادة تمثيل ملحمة الخلق (Enūma Eliš) وإقامة احتفالات **أكيتو (Akitu)** (رأس السنة) في العاصمة، وهي احتفالات ذات دلالات سياسية لترسيخ سلطة الملك والإله آشور على العالم.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>3. الثقافة الآشورية والإرث الأدبي والفني (التأثير والتفرد)</h4>
+                <p>الثقافة الآشورية كانت هجينة، استوعبت المسمارية السومرية/البابلية، لكنها طبعتها بالروح العسكرية. **الفن:** النقوش البارزة كانت بمثابة وثائق تاريخية، حيث كانت توثق الحملات العسكرية بالتسلسل الزمني، وتظهر صوراً مفصلة لتعذيب الأسرى وقطع رؤوسهم كجزء من **بروباغندا الدولة**. **الأدب:** أهم مجموعة نصوص هي مجموعة "حوليات الملوك" (Royal Annals)، التي تسرد إنجازات الملك عامًا بعد عام بتفاصيل دقيقة ومتحيزة، وهي مصدرنا الرئيسي لتاريخ الإمبراطورية.</p>
+            </div>
+            
+            <div class="sub-section king-list">
+                <h4>4. الملوك جميعهم: قائمة مرجعية من العصر القديم حتى السقوط</h4>
+                <p>هذه القائمة تشمل ملوكًا رئيسيين يمثلون عصور آشور المختلفة، وتوضح كيف تطورت السلطة المركزية وصولاً إلى الإمبراطورية الحديثة.</p>
+                <table>
+                    <tr>
+                        <th>الملك</th>
+                        <th>العصر</th>
+                        <th>التاريخ التقريبي</th>
+                        <th>أهم الإنجازات والألقاب</th>
+                    </tr>
+                    <tr>
+                        <td>**شمشي-أدد الأول**</td>
+                        <td>القديم</td>
+                        <td>1809–1776 ق.م</td>
+                        <td>أسس أول قوة آشورية عظمى (مملكة ما بين النهرين). لُقّب بـ "ملك الكل".</td>
+                    </tr>
+                    <tr>
+                        <td>**آشور-أوباليط الأول**</td>
+                        <td>الوسيط</td>
+                        <td>1365–1330 ق.م</td>
+                        <td>حرر آشور من الهيمنة الميتانية. بدأ مراسلات دولية مع مصر.</td>
+                    </tr>
+                    <tr>
+                        <td>**توكولتي-نينورتا الأول**</td>
+                        <td>الوسيط</td>
+                        <td>1244–1208 ق.م</td>
+                        <td>أول ملك يغزو بابل ويطيح بسلالتها. بنى عاصمة جديدة لنفسه (**كارتوكولتي-نينورتا**).</td>
+                    </tr>
+                    <tr>
+                        <td>**آشور ناصربال الثاني**</td>
+                        <td>الحديث</td>
+                        <td>883–859 ق.م</td>
+                        <td>مؤسس الإمبراطورية الحديثة. نقل العاصمة إلى كالح. معروف بـ **القسوة المفرطة** لردع التمرد.</td>
+                    </tr>
+                    <tr>
+                        <td>**شلمنصر الثالث**</td>
+                        <td>الحديث</td>
+                        <td>859–824 ق.م</td>
+                        <td>قاد حملة **معركة قرقر** الشهيرة (853 ق.م) ضد تحالف 12 ملكًا سورياً وعبرياً.</td>
+                    </tr>
+                    <tr>
+                        <td>**تيغلاث بيلسر الثالث**</td>
+                        <td>الحديث</td>
+                        <td>745–727 ق.م</td>
+                        <td>أعاد تنظيم الجيش والإدارة. سيطر على شمال بابل وسوريا.</td>
+                    </tr>
+                    <tr>
+                        <td>**سرجون الثاني**</td>
+                        <td>الحديث</td>
+                        <td>722–705 ق.م</td>
+                        <td>غزا **مملكة إسرائيل الشمالية** (721 ق.م). بنى عاصمته الجديدة **دور شروكين**.</td>
+                    </tr>
+                    <tr>
+                        <td>**سنحاريب**</td>
+                        <td>الحديث</td>
+                        <td>705–681 ق.م</td>
+                        <td>دمر بابل (689 ق.م). شن حملة شهيرة على **القدس** (701 ق.م).</td>
+                    </tr>
+                    <tr>
+                        <td>**أسرحدون**</td>
+                        <td>الحديث</td>
+                        <td>681–669 ق.م</td>
+                        <td>قاد الغزو الناجح لـ **مصر** ودمجها بالإمبراطورية (671 ق.م). أعاد بناء بابل.</td>
+                    </tr>
+                    <tr>
+                        <td>**آشوربانيبال**</td>
+                        <td>الحديث</td>
+                        <td>668–627 ق.م</td>
+                        <td>أقصى توسع عسكري وثقافي. هزم **عيلام** بالكامل.</td>
+                    </tr>
+                    <tr>
+                        <td>**آشور-إتيل-إيلاني**</td>
+                        <td>الحديث</td>
+                        <td>627–623 ق.م</td>
+                        <td>بداية الانهيار والصراع على الخلافة بعد وفاة آشوربانيبال.</td>
+                    </tr>
+                    <tr>
+                        <td>**سين-شار-إشكون**</td>
+                        <td>الحديث</td>
+                        <td>623–612 ق.م</td>
+                        <td>آخر ملك حكم نينوى. قُتل أثناء سقوط العاصمة على يد البابليين والميديين.</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="sub-section">
+                <h4>5. تفاصيل الإرث الأدبي والمعرفي (علم الفلك والرياضيات)</h4>
+                <p><strong>ألواح الفلك:</strong> تم العثور على مجموعة ضخمة من النصوص الفلكية (مثل **MUL.APIN** و **Enuma Anu Enlil**) في مكتبة نينوى، التي تضمنت قوائم بالنجوم، والتنبؤات الجوية والفلكية. **الطب:** كان لديهم نصوص طبية متخصصة تصف الأعراض والوصفات العشبية والعمليات الجراحية البدائية. **الحساب:** استمر استخدام النظام الستيني (قاعدة 60) في الحسابات المعقدة وتوزيع المياه والضرائب.</p>
+            </div>
+            
+            <div class="sub-section">
+                <h4>6. الحياة الاجتماعية والتقسيم الطبقي (الحقوق والواجبات)</h4>
+                <p><strong>طبقة العبيد (Arad/Amātu):</strong> كانوا إما أسرى حرب أو مدينين. لم يكن العبد يتمتع بأي حقوق، لكنه كان يتمتع بحماية قانونية محدودة ضد سوء المعاملة المفرط. **الأهلية القانونية:** المواطنون الأحرار (المار بنوتي) فقط كانوا يتمتعون بالقدرة الكاملة على التقاضي وتملك الأراضي. **الأسرة:** كان زواج الأقارب شائعًا للحفاظ على الثروة والألقاب داخل العائلات النبيلة. كان لـ **الكتبة** (Tupšarru) مكانة اجتماعية عالية وكانوا يعفون من الجندية.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>7. الاقتصاد القائم على الجزية (تحليل مصادر الدخل)</h4>
+                <p>بالإضافة إلى الجزية (Mandattu)، كان مصدر دخل آخر هو **الضرائب الزراعية (Biltu)** المفروضة على الحقول الآشورية الأصلية. **التمويل:** كانت هناك نظام مالي مركزي يتم إدارته في **بيت رابي (Bīt Rēši)** (القصر الملكي)، ويشرف عليه مسؤول الخزانة (Abarakku). الميزانية العسكرية كانت تُصرف على دفع رواتب **الـ ša-rēši** (قادة الخصيان) والجنود المرتزقة (الـ **Hūpšu**)، وشراء الخيول والحديد من المناطق التابعة.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>8. التقنيات والابتكارات الهندسية (الآلات والأسلحة المتطورة)</h4>
+                <p>كانت آشور رائدة في العصر الحديدي. **الأسلحة:** استخدموا **القوس المركب المزدوج** المصنوع من الخشب والقرن والغراء (الذي يطلق سهامًا لمسافة أبعد)، و **الخوذات الحديدية المدرعة** التي توفر حماية أفضل بكثير من الخوذ البرونزية السابقة. **الري:** نظام قنوات سنحاريب كان يغطي مساحة ري تبلغ حوالي **5000 هكتار**، ويشمل سدوداً وقنوات مبطنة بالطين لمنع التسرب.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>9. العمران والعمارة الهندسية (تفاصيل المدن والأبواب)</h4>
+                <p><strong>المواد:</strong> على الرغم من استخدام الطوب اللبن في معظم البناء، فإن القصور الملكية كانت تستخدم كتل **الحجر الجيري الجيد** للحفاظ على النقوش. **التنظيم المدني:** دور شروكين (عاصمة سرجون) بُنيت على شكل مربع، وكانت تخطيطاتها الهندسية المسبقة هي أساس التخطيط المدني اللاحق. **الزقورات** كانت تُبنى في كل عاصمة (آشور، كالح، نينوى) وتُعرف باسم **"بيت إكي" (البيت المشابه للجبل)**.</p>
+            </div>
+
+            <div class="sub-section war-list">
+                <h4>10. الحروب والمعارك جميعها (الرئيسية) - تحليل التكتيكات والقادة</h4>
+                <p>كانت الحروب هي المحرك الأساسي للإمبراطورية. الجيش الآشوري كان آلة منظمة لم يسبق لها مثيل في العالم القديم.</p>
+                <table>
+                    <tr>
+                        <th>المعركة / الحملة</th>
+                        <th>التاريخ</th>
+                        <th>الملك القائد</th>
+                        <th>الأهمية والتكتيكات</th>
+                    </tr>
+                    <tr>
+                        <td>**معركة قرقر**</td>
+                        <td>853 ق.م</td>
+                        <td>شلمنصر الثالث</td>
+                        <td>ضد تحالف 12 ملكاً (بما في ذلك دمشق وإسرائيل). كانت غير حاسمة، لكنها أوقفت زحف آشور مؤقتًا.</td>
+                    </tr>
+                    <tr>
+                        <td>**حصار السامرة**</td>
+                        <td>724–721 ق.م</td>
+                        <td>شلمنصر الخامس / سرجون الثاني</td>
+                        <td>سقوط **مملكة إسرائيل الشمالية** وتهجير سكانها، وهو ما أدى إلى **"الأسباط العشرة الضائعة"**.</td>
+                    </tr>
+                    <tr>
+                        <td>**حصار القدس**</td>
+                        <td>701 ق.م</td>
+                        <td>سنحاريب</td>
+                        <td>ضد يهوذا. انتهى بدفع الملك حزقيا لجزية ضخمة (**30 طناً من الفضة**) دون سقوط المدينة (حسب السجلات اليهودية والمصرية).</td>
+                    </tr>
+                    <tr>
+                        <td>**معركة حلولي**</td>
+                        <td>691 ق.م</td>
+                        <td>سنحاريب</td>
+                        <td>ضد تحالف بابل، العيلاميين والآراميين. كانت معركة ضارية، ادعى سنحاريب النصر فيها بصعوبة.</td>
+                    </tr>
+                    <tr>
+                        <td>**غزو مصر**</td>
+                        <td>671 ق.م</td>
+                        <td>أسرحدون</td>
+                        <td>نجاح آشور في غزو مصر بالكامل وإخضاع الفراعنة، مما جعل آشور أول قوة عالمية تحكم بين الخليج والنيل.</td>
+                    </tr>
+                    <tr>
+                        <td>**معركة نهر أولاي**</td>
+                        <td>653 ق.م</td>
+                        <td>آشوربانيبال</td>
+                        <td>هزيمة العيلاميين تدميراً. تم قطع رأس ملك عيلام وإرساله إلى نينوى كرمز للنصر المطلق.</td>
+                    </tr>
+                    <tr>
+                        <td>**سقوط نينوى**</td>
+                        <td>612 ق.م</td>
+                        <td>سين-شار-إشكون</td>
+                        <td>الهزيمة النهائية لآشور على يد تحالف البابليين والميديين والسكيثيين، وتم تدمير الإمبراطورية.</td>
+                    </tr>
+                </table>
+                <p>**التكتيكات العسكرية:** كانت التشكيلة الأساسية للقتال هي **وحدات القتال المدمجة (Kišru)**. **الفرسان (Rākibu)** كان يتم استخدامهم في أزواج: فارس يحمل رمحًا وفارس يحمل قوسًا. **سلاح المهندسين (Nākiru)** كان يضم جنودًا متخصصين في بناء الجسور العائمة وهدم الأسوار.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>11. الاختراعات والابتكارات المحددة (نظام النقل والتواصل)</h4>
+                <p>بالإضافة إلى الحديد والبريد السريع، من ابتكاراتهم: **الاستخدام الرسمي للآرامية**، والتي أصبحت لغة مشتركة (Lingua Franca) لغرب آسيا. **الرموز البرجية:** طوروا نظاماً لتفسير حركة النجوم والكواكب (التي تُعد بداية علم التنجيم الحديث)، وكان هذا النظام يؤثر على القرارات الحكومية العليا.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>12. تفاصيل الإمبراطورية: مراحل التوسع والهيمنة (الوثائق الدبلوماسية)</h4>
+                <p>التحول إلى إمبراطورية تم عبر دمج القوة العسكرية مع البيروقراطية. **نظام الترحيل (Yakīn-ilī):** نقل أكثر من **4 ملايين شخص** على مدى 250 عامًا. لم يكن الترحيل عشوائياً، بل كان يتم نقل المهندسين والحرفيين المهرة لخدمة مشاريع الدولة في العاصمة، بينما يتم نقل سكان المدن المتمردة لكسر ولائهم. هذا أدى إلى زيادة التنوع العرقي في نينوى وكالح.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>13. الإدارة والبيروقراطية المركزية (الروتين الإداري)</h4>
+                <p>كانت الإدارة تتم عبر مراسلات مستمرة بين الملك وحكام المقاطعات (Šaknu) والقادة العسكريين (Bel Pihāte). **الـ Limmu (الإبونيم):** كان نظام تسمية السنوات (كل سنة باسم مسؤول رفيع)، مما أتاح تسجيل تاريخي دقيق للأحداث. **الرقابة:** كان الملك يتلقى تقارير استخباراتية مفصلة يومياً من جميع أنحاء الإمبراطورية، وكان هذا يضمن الكفاءة العالية وسرعة اتخاذ القرارات.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>14. التجارة والسيطرة على الطرق التجارية (الموارد الاستراتيجية)</h4>
+                <p>التجارة الخارجية كانت تحت سيطرة صارمة لتأمين **الحديد (Parzillu)**، **القصدير (Anaku)**، و **الأخشاب (Eru)**. **التحصيل:** كانت الجزية تُنقل عبر **الطرق الملكية** الآشورية، وهي شبكة طرق تم صيانتها جيدًا خصيصًا لتسهيل حركة الجيش والبريد الملكي (الـ **Kīpu**). كانت آشور تفرض رسوماً جمركية عالية على البضائع الداخلة والخارجة في نقاط تفتيش محددة.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>15. جميع المدن الرئيسية (التفاصيل والوظيفة)</h4>
+                <p><strong>آشور:</strong> المدينة الأم، حيث كانت تقام مراسم تتويج الملوك. **كالح (نمرود):** بنيت في **879 ق.م**. اشتهرت بـ "القصر الشمالي الغربي" لآشور ناصربال الثاني، الذي كان يضم بحيرة صناعية كبيرة. **نينوى:** نُظمت كمدينة حديثة بشوارع واسعة، محاطة بسورين متوازيين وبينهما خندق، مما جعلها منيعة. **دور شروكين:** اكتملت عام **706 ق.م** وكانت تحوي معبدًا مخصصًا للإله **نابو**، مما يدل على أهمية الكتابة.</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>16. جميع عصور الحضارة الآشورية (التسلسل الزمني والخصائص)</h4>
+                <ul>
+                    <li>**العصر الآشوري القديم (2025 – 1378 ق.م):** نظام الـ **Karum** (مستعمرات تجارية) خارج آشور، أهمها كاروم كانش. كانت آشور تحكم كـ **أوليغارشية** تجارية.</li>
+                    <li>**العصر الآشوري الوسيط (1378 – 934 ق.م):** ترسيخ القوة، وظهور مفهوم **شار مات آشور** (ملك أرض آشور). بداية استخدام الحديد.</li>
+                    <li>**العصر الآشوري الحديث (911 – 609 ق.م):** توسع لا مثيل له. نظام الجيش الدائم (Permanent Army). البيروقراطية الآرامية. الذروة العسكرية والانهيار.</li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h4>17. توسعات الإمبراطورية (استراتيجيات الهيمنة الجغرافية)</h4>
+                <p>تم تقسيم السيطرة إلى **أرض آشور (Māt Aššur)** (المقاطعات المُدارة مباشرة) و **أرض الجزية (Māt Maddatti)** (الممالك التابعة التي تدفع الجزية). غزو **أورارتو** (Urartu) في جبال أرمينيا كان ضرورياً للسيطرة على مصادر الحديد والقصدير. السيطرة على **بابل** كانت متقطعة ومتوترة، حيث تم تدميرها وإعادة بنائها عدة مرات (أهمها تدمير سنحاريب عام 689 ق.م).</p>
+            </div>
+
+            <div class="sub-section">
+                <h4>نهاية الإمبراطورية: السقوط المنهجي</h4>
+                <p>السقوط لم يكن مفاجئاً، بل نتيجة لـ **صراع الخلافة الداخلي** بعد آشوربانيبال، وضعف القيادة المركزية. تحالف **نبوبولاسر** (البابلي) و **ساياخاريس** (الميدي) استغل هذا الضعف. بعد سقوط نينوى (612 ق.م)، استمرت المقاومة في **حران** حتى عام 609 ق.م، حيث سحق التحالف القوات الآشورية المتبقية، منهياً وجود الإمبراطورية رسمياً.</p>
+            </div>
+            
+        </section>
+
+        <section class="other-civilization">
+            <h2>الخاتمة: إرث آشور الدائم</h2>
+            <p>إن إرث آشور لا يقتصر على العنف، بل يشمل الإدارة المنهجية، التخطيط المدني، والنظام العسكري الذي أصبح نموذجاً للقيادة الإمبراطورية لآلاف السنين بعد ذلك. حفظت آشور لنا مفاتيح فهم حضارات الرافدين. انتهى.</p>
+        </section>
+        
+    </div>
+    
+</body>
+</html>
+<style>
+    :root{
+        --bg:#0f1724; 
+        --card:#0b1220;
+        --accent:#ff7a59;
+        --muted:#9aa4b2;
+        --assyrian-bg: #1a0000; 
+        --assyrian-color: #fff8e1; 
+        --assyrian-border: #cc0000;
+        --sumerian-bg: #000000;
+        --sumerian-border: #ffd700;
+    }
+    
+    *{box-sizing:border-box}
+    html,body{
+        height:100%;
+        margin:0;
+        font-family:'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:#e6eef6;
+        background:linear-gradient(180deg,var(--bg),#071025);
+        line-height: 1.8; 
+        font-size: 16px;
+    }
+    .
+        background-image: none; 
+    }
+    
+    #assyrian-empire h3 {
+        color: #ffcc00; 
+        border-bottom-color: var(--assyrian-border);
+        font-size: 2.5em; 
+        text-shadow: 3px 3px #000;
+    }
+
+    .sub-section {
+        padding: 20px 0;
+        margin-bottom: 30px;
+        border-top: 2px dashed #444;
+    }
+
+    .sub-section h4 {
+        color: #ff8c00; 
+        font-size: 1.5em; 
+    }
+    
+    .sub-section p {
+        color: var(--assyrian-color); 
+        font-size: 1.05em; 
+    }
+    
+    #sumerian-civilization {
+        background: var(--sumerian-bg);
+        color: var(--assyrian-color); 
+        box-shadow: 0 25px 50px rgba(0,0,0,1);
+        border: 5px solid var(--sumerian-border); 
+        padding: 50px 5%; 
+        background-image: none; 
+    }
+    
+    #sumerian-civilization h3 {
+        color: #ffbf00; 
+        border-bottom-color: var(--sumerian-border);
+        font-size: 2.5em;
+    }
+    
+    .sumerian-sub-section h4 {
+        color: #e69138; 
+        font-size: 1.5em;
+    }
+    .sumerian-sub-section p {
+        color: var(--assyrian-color);
+    }
+
+    ul {
+        list-style: none;
+        padding-right: 25px;
+        color: var(--assyrian-color);
+    }
+    ul li:before {
+        content: "✶"; 
+        color: #ffcc00;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1.5em;
+        margin-right: 8px;
+    }
+
+    /* التعديل الذي يضيف خاصية السحب الأفقي */
+    .king-list, .war-list {
+        display: block; 
+        overflow-x: auto; 
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    .king-list table, .war-list table {
+        width: 100%;
+        border-collapse: collapse;
+        color: var(--assyrian-color);
+        background-color: #333;
+        font-size: 1.0em;
+        min-width: 900px; 
+    }
+    
+    .king-list th, .king-list td, .war-list th, .war-list td {
+        border: 3px solid #ffbf00;
+        padding: 12px 18px; 
+        text-align: right;
+        min-width: 180px; 
+    }
+    
+    .king-list th, .war-list th {
+        background-color: var(--assyrian-border);
+        color: var(--assyrian-color);
+    }
+    .war-list tr:nth-child(even) {
+        background-color: #444; 
+    }
+
+    @media(max-width:560px){
+        header{flex-direction:column;align-items:flex-start}
+    }
+    
+    footer{color:var(--muted);text-align:center;margin-top:28px}
+    
+</style>
+            <div class="cta">
+                <a href="#work" class="btn">شاهد أعمالي</a>
+                <a href="#contact" class="btn ghost">تواصل معي</a>
+                
+                <a href="#" class="btn" style="background: #00f2fe; color: #0f1724; box-shadow: 0 4px 15px rgba(0, 242, 254, 0.4);">
+                    **افتح محمد حيدر جبار نغل**
+                </a>
+                </div>

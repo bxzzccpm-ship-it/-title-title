@@ -1,0 +1,327 @@
+:root{
+
+  --bg:#0f1724; /* dark navy */
+
+  --card:#0b1220;
+
+  --accent:#ff7a59;
+
+  --muted:#9aa4b2;
+
+  --assyrian-bg: #1a0000; 
+
+  --assyrian-color: #fff8e1; 
+
+  --assyrian-border: #cc0000;
+
+  --sumerian-bg: #000000;
+
+  --sumerian-border: #ffd700;
+
+}
+
+*{box-sizing:border-box}
+
+html,body{
+
+    height:100%;
+
+    margin:0;
+
+    font-family:'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color:#e6eef6;
+
+    background:linear-gradient(180deg,var(--bg),#071025);
+
+    line-height: 1.8; 
+
+    font-size: 16px;
+
+}
+
+.container{max-width:1100px;margin:32px auto;padding:20px}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+
+.brand{display:flex;align-items:center;gap:12px}
+
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ffb085);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+
+nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+
+.hero{background:linear-gradient(180deg,rgba(255,255,255,0.03),transparent);border-radius:18px;padding:28px;margin-top:20px;display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center}
+
+.hero h1{margin:0;font-size:28px}
+
+.hero p{color:var(--muted);line-height:1.6}
+
+.card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6); margin-top: 20px;}
+
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+
+.feature{padding:14px;border-radius:12px}
+
+.cta{display:flex;gap:10px;margin-top:18px; flex-wrap: wrap;}
+
+.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+/* Styles for the content sections */
+
+section{padding:40px;margin-bottom:30px;background:var(--card);border-radius:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+
+h2, h3 {color:var(--accent);border-bottom:3px solid rgba(255,122,89,0.3);padding-bottom:15px;}
+
+/* Sumerian Custom Style */
+
+#sumerian-civilization {
+
+    background: var(--sumerian-bg);
+
+    color: var(--assyrian-color); 
+
+    box-shadow: 0 25px 50px rgba(0,0,0,1);
+
+    border: 5px solid var(--sumerian-border); 
+
+    padding: 50px 5%; 
+
+    background-image: none; 
+
+}
+
+#sumerian-civilization h3 {
+
+    color: #ffbf00; 
+
+    border-bottom-color: var(--sumerian-border);
+
+    font-size: 2.5em;
+
+}
+
+.sumerian-sub-section h4 {
+
+    color: #e69138; 
+
+    font-size: 1.5em;
+
+}
+
+.sumerian-sub-section p {
+
+    color: var(--assyrian-color);
+
+}
+
+.image-placeholder {
+
+    width: 95%;
+
+    height: 250px;
+
+    background-color: #383838;
+
+    margin: 30px auto;
+
+    border: 3px solid #ffaa00;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #f0f0f0;
+
+    font-size: 1.2em;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.king-list table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    color: #fff8e1;
+
+    background-color: #333;
+
+    font-size: 0.9em;
+
+    min-width: 700px;
+
+}
+
+.king-list th, .king-list td {
+
+    border: 2px solid #ffbf00;
+
+    padding: 10px;
+
+    text-align: right;
+
+}
+
+.king-list th {
+
+    background-color: #ff8c00;
+
+    color: #101010;
+
+}
+
+/* Assyrian Custom Style */
+
+#assyrian-empire {
+
+    background: var(--assyrian-bg);
+
+    color: var(--assyrian-color); 
+
+    box-shadow: 0 25px 50px rgba(0,0,0,1);
+
+    border: 6px solid var(--assyrian-border); 
+
+    padding: 50px 3%;
+
+    background-image: none; 
+
+}
+
+#assyrian-empire h3 {
+
+    color: #ffcc00; 
+
+    border-bottom-color: var(--assyrian-border);
+
+    font-size: 2.5em; 
+
+    text-shadow: 3px 3px #000;
+
+}
+
+.sub-section h4 {
+
+    color: #ff8c00; 
+
+    font-size: 1.5em; 
+
+}
+
+.sub-section p {
+
+    color: var(--assyrian-color); 
+
+    font-size: 1.05em; 
+
+}
+
+ul {
+
+    list-style: none;
+
+    padding-right: 25px;
+
+    color: var(--assyrian-color);
+
+}
+
+ul li:before {
+
+    content: "✶"; 
+
+    color: #ffcc00;
+
+    font-weight: bold;
+
+    display: inline-block; 
+
+    width: 1.5em;
+
+    margin-right: 8px;
+
+}
+
+/* Table Responsiveness */
+
+.king-list, .war-list {
+
+    display: block; 
+
+    overflow-x: auto; 
+
+    width: 100%; 
+
+    margin-top: 20px;
+
+}
+
+.king-list table, .war-list table {
+
+    min-width: 900px; 
+
+}
+
+.war-list table {
+
+    font-size: 0.9em;
+
+}
+
+.king-list th, .king-list td, .war-list th, .war-list td {
+
+    border: 3px solid #ffbf00;
+
+    padding: 12px 18px; 
+
+    text-align: right;
+
+    min-width: 180px; 
+
+}
+
+.king-list th, .war-list th {
+
+    background-color: var(--assyrian-border);
+
+    color: var(--assyrian-color);
+
+}
+
+.war-list tr:nth-child(even) {
+
+    background-color: #444; 
+
+}
+
+/* responsive */
+
+@media(max-width:900px){
+
+  .hero{grid-template-columns:1fr}
+
+  .features{grid-template-columns:repeat(2,1fr)}
+
+}
+
+@media(max-width:560px){
+
+  .features{grid-template-columns:1fr}
+
+  header{flex-direction:column;align-items:flex-start}
+
+  .cta{flex-direction: column;}
+
+  .king-list table, .war-list table {min-width: 100%;}
+
+}
+
+footer{color:var(--muted);text-align:center;margin-top:28px}
