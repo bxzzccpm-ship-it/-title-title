@@ -343,3 +343,38 @@ h2 {
         0 0 20px rgba(0, 242, 254, 0.6), /* ظل أزرق أغمق ثاني */
         0 0 40px rgba(0, 242, 254, 0.4); /* ظل أزرق خفيف ثالث */
 }
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    
+    /* تغيير لون النص ليناسب الخلفية الجديدة (اختياري) */
+    color: #F8F8F8; 
+
+    /* -------------------------------------- */
+    /* خلفية صورة بكسل (Pixel Art) وتلوين */
+    /* -------------------------------------- */
+    
+    /* رابط لصورة كتابات قديمة (يمكنك تغييره لاحقاً) */
+    background-image: url('https://images.unsplash.com/photo-1549419163-95290b0e5b72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+
+    background-size: cover; /* تغطية كاملة للخلفية */
+    background-position: center; /* توسيط الصورة */
+    background-attachment: fixed; /* تثبيت الصورة عند التمرير */
+
+    /* هذا هو الجزء الذي يُحول الصورة إلى فن بكسل مع تلوين */
+    filter: 
+        saturate(1.5) /* زيادة تشبع الألوان */
+        sepia(0.3) /* إضافة مسحة لون قديمة/صفراء */
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='f'><feGaussianBlur stdDeviation='0.5' /><feColorMatrix type='saturate' values='0' /><feComponentTransfer><feFuncA type='linear' slope='0.8' intercept='0'/></feComponentTransfer><feComponentTransfer><feFuncR type='discrete' tableValues='0 0.5 1'/><feFuncG type='discrete' tableValues='0 0.5 1'/><feFuncB type='discrete' tableValues='0 0.5 1'/></feComponentTransfer></filter></svg>#f");
+}
+
+/* -------------------------------------- */
+/* تحسين وضوح محتوى الموقع فوق الخلفية */
+/* -------------------------------------- */
+/* لجعل قالب المحتوى شفافاً جزئياً لرؤية الخلفية */
+.container {
+    background: rgba(15, 23, 36, 0.8); /* لون الخلفية القديم بـ شفافية 80% */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* إضافة ظل للحاوية */
+}
