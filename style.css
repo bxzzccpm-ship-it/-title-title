@@ -343,3 +343,19 @@ h2 {
         0 0 20px rgba(0, 242, 254, 0.6), /* ظل أزرق أغمق ثاني */
         0 0 40px rgba(0, 242, 254, 0.4); /* ظل أزرق خفيف ثالث */
 }
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+
+    /* -------------------------------------- */
+    /* خلفية صورة مع كتابات قديمة */
+    /* -------------------------------------- */
+    background-image: url('https://images.unsplash.com/photo-1549419163-95290b0e5b72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+    background-size: cover; /* تغطية كاملة للخلفية */
+    background-position: center; /* توسيط الصورة */
+    background-attachment: fixed; /* تثبيت الصورة عند التمرير */
+    background-color: var(--bg); /* لون احتياطي في حال عدم تحميل الصورة */
+
+    /* ... خصائص أخرى ... */
+}
