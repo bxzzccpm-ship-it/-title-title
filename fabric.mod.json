@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "xcvbtotem",
+  "version": "${version}",
+  "name": "XCVB Totem Mod",
+  "description": "Adds three tiers of the custom XCVB Totem (Simple, Medium, Strong) with escalating death-protection effects.",
+  "authors": ["Kadhim"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.xcvb.totem.XcvbTotemMod"
+    ]
+  },
+  "mixins": [
+    "xcvbtotem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

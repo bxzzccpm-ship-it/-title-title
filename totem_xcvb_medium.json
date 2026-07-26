@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "xcvbtotem:totem_xcvb_simple" },
+    { "item": "minecraft:diamond" },
+    { "item": "minecraft:diamond" },
+    { "item": "minecraft:diamond" },
+    { "item": "minecraft:diamond" }
+  ],
+  "result": {
+    "item": "xcvbtotem:totem_xcvb_medium",
+    "count": 1
+  }
+}

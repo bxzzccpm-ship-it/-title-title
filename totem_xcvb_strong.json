@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "xcvbtotem:totem_xcvb_medium" },
+    { "item": "minecraft:nether_star" },
+    { "item": "minecraft:nether_star" },
+    { "item": "minecraft:diamond_block" },
+    { "item": "minecraft:diamond_block" }
+  ],
+  "result": {
+    "item": "xcvbtotem:totem_xcvb_strong",
+    "count": 1
+  }
+}
